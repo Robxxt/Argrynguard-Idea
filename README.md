@@ -1,12 +1,12 @@
-# Anchor: Secure Offline Communication Protocol
+# Argynguard: Secure Offline Communication Protocol
 **Design Document & Security Whitepaper v1.0**
 
 ---
 
 ## 1. Executive Summary
-**Anchor** is a high-security, offline-first mobile application designed to establish and maintain a "Web of Trust" between peers. In an era of deep fakes and AI-driven impersonation, Anchor relies on physical proximity and cryptographic proofs to validate identity.
+**Argynguard** is a high-security, offline-first mobile application designed to establish and maintain a "Web of Trust" between peers. In an era of deep fakes and AI-driven impersonation, Argynguard relies on physical proximity and cryptographic proofs to validate identity.
 
-By utilizing NFC for "Zero-Knowledge" key exchanges and strict local storage protocols, Anchor ensures that users can verify who they are communicating with—whether over a phone call, encrypted chat, or video link—without relying on central servers or internet connectivity.
+By utilizing NFC for "Zero-Knowledge" key exchanges and strict local storage protocols, Argynguard ensures that users can verify who they are communicating with—whether over a phone call, encrypted chat, or video link—without relying on central servers or internet connectivity.
 
 ---
 
