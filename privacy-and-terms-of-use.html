@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argynguard | Privacy Policy</title>
+
+    <!-- Reuse existing styles for visual consistency -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <img src="ArgynGuard.png" alt="Argynguard Logo" class="app-logo" />
+    <p class="subtitle">Privacy Policy</p>
+</header>
+
+<div class="container">
+	<h2>Privacy Policy</h2>
+
+<p>
+    Argynguard is an identity verification utility designed for high-risk environments.
+    It is strictly a verification tool to protect against impersonation and deepfakes;
+    it is <strong>not</strong> a secure messaging or communication platform.
+</p>
+
+<h3>1. Required Permissions</h3>
+
+<h4>Camera Access</h4>
+<p>
+    <strong>Purpose:</strong> Required to scan QR codes for the 'Ephemeral Handshake' (Identity Exchange).
+</p>
+<ul>
+    <li><strong>Data Processing:</strong> Images are processed in Random Access Memory (RAM) for QR detection and immediately discarded.</li>
+    <li><strong>No Persistence:</strong> No video or photos are ever saved to storage or transmitted.</li>
+</ul>
+
+<h4>Biometrics (FaceID / Fingerprint)</h4>
+<p>
+    <strong>Purpose:</strong> Required to unlock the hardware-backed encryption keys (Secure Enclave) that protect your database.
+</p>
+<ul>
+    <li><strong>Data Processing:</strong> The app never accesses your actual biometric data. We only receive a cryptographic 'token' from the operating system upon successful verification.</li>
+</ul>
+
+<h3>2. Data Processing & Storage</h3>
+
+<h4>Contact Metadata (Names/Photos)</h4>
+<p>
+    Stored locally in an encrypted SQLite database (AES-256). This data is used solely to display your personal directory of verified contacts.
+</p>
+
+<h4>Cryptographic Secrets (Keys)</h4>
+<p>
+    Master keys are wrapped by the device's Secure Enclave. Session keys are derived temporarily in RAM.
+</p>
+<h4>No Backup Possibility</h4>
+<p>
+    <strong>Intentional Limitation:</strong> To the best of our knowledge, there is no mechanism to back up, export, or transfer this data to another device. This restriction is a deliberate security feature designed to neutralize sophisticated cloning and offline brute-force attacks.
+</p>
+<h4>Network & Cloud</h4>
+<p>
+    Argynguard operates on an <strong>'Offline-First'</strong> architecture. We have no servers, no trackers, and no analytics. No data is ever transmitted off the device by the app.
+</p>
+
+<div style="background-color: #f0f4f8; border: 1px solid #2c3e50; border-radius: 12px; padding: 16px; margin-top: 32px; display: flex; align-items: center;">
+    <span style="font-size: 24px; margin-right: 16px; color: #2c3e50;">&#128737;</span> <div style="font-size: 14px; line-height: 1.4; color: #1a1a1a;">
+        <strong>Zero-Knowledge Architecture:</strong> We cannot recover your account or access your data, even under court order, because we do not hold the keys.
+    </div>
+</div>
+
+<hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
+
+<h2>Usage Agreement</h2>
+
+<p style="color: #666;">Please read carefully before proceeding.</p>
+
+<div style="background-color: #f9f9f9; border: 1px solid #e0e0e0; border-radius: 12px; padding: 20px; max-height: 400px; overflow-y: auto;">
+    <p>
+        <strong>1. Purpose</strong><br>
+        Argynguard is an experimental identity verification tool designed for high-risk environments. It is intended to assist in verifying human identities, not to replace professional security details.
+    </p>
+
+    <p>
+        <strong>2. 'AS IS' Disclaimer</strong><br>
+        This software is provided 'AS IS', without warranty of any kind, express or implied. The author makes no representations regarding the app's reliability, safety, or fitness for a particular purpose.
+    </p>
+
+    <p>
+        <strong>3. Limitation of Liability</strong><br>
+        By using this software, you agree that the author shall NOT be held liable for any claim, damages, or other liability—whether in an action of contract, tort, or otherwise—arising from the use of this software. You assume full responsibility for any data loss or physical consequences resulting from its use.
+    </p>
+
+    <p>
+        <strong>4. No Complaints / Recourse</strong><br>
+        This is an initiative provided freely. You accept the tool in its current state. The author is under no obligation to provide support, updates, or address feature requests.
+    </p>
+
+    <p>
+        <strong>5. Contact</strong><br>
+        For critical security reports only, you may contact the maintainer at:<br>
+        <a href="mailto:argrynguard@gmail.com">argrynguard@gmail.com</a>
+    </p>
+</div>
+</div>
+<br/><br/>
+<footer>
+    <p class="copyright">
+        &copy; 2026 Argynguard. All rights reserved.
+    </p>
+</footer>
+
+</body>
+</html>
+
